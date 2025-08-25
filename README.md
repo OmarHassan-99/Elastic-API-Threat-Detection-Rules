@@ -1,18 +1,32 @@
-# Elastic API & Threat Detection Rules
+# ⚡ Elastic API & Threat Detection Rules
 
-This project demonstrates the use of ElasticSearch and Kibana for both data management and security monitoring. It includes:
+A practical project showcasing how to use **Elasticsearch** and **Kibana** for both log management and security monitoring.  
+It walks through CRUD operations, ingestion pipelines, and building custom threat detection rules to spot suspicious PowerShell activity.  
 
-- **Elasticsearch API (CRUD):** Creating, inserting, updating, and deleting documents through Dev Tools.
-- **Ingestion Pipelines:** Using processors (grok, date, lowercase, set, remove) to enrich and normalize logs.
-- **Threat Detection Rules:** Writing detection rules in Kibana for suspicious PowerShell scenarios, such as:
-  - Encoded commands
-  - Execution policy bypass
-  - Hidden window execution
+---
 
-## Requirements
-- VMware/VirtualBox with Ubuntu & Windows VMs
-- ElasticSearch & Kibana configured
-- Winlogbeat or any Windows log shipper
+## 🔹 Features
+- **Elasticsearch API (CRUD):**  
+  Create, insert, update, and delete documents directly from Kibana Dev Tools.  
 
-## Author
-Omar Hassan : https://www.linkedin.com/in/omar-hassan9999/
+- **Ingestion Pipelines:**  
+  Enrich and normalize logs with processors: `grok`, `date`, `lowercase`, `set`, and `remove`.  
+
+- **Threat Detection Rules:**  
+  Detection scenarios for malicious PowerShell usage, including:  
+  - Encoded commands (`-EncodedCommand`, `-e`)  
+  - Execution policy bypass (`-ExecutionPolicy Bypass`)  
+  - Hidden window execution (`-WindowStyle Hidden`)  
+
+---
+
+## 🛠 Requirements
+- VMware/VirtualBox with **Ubuntu & Windows VMs**  
+- **Elasticsearch & Kibana** properly configured  
+- **Winlogbeat** (or any log shipper) on Windows  
+
+---
+
+## 👤 Author
+**Omar Hassan**  
+[LinkedIn](https://www.linkedin.com/in/omar-hassan9999/)
